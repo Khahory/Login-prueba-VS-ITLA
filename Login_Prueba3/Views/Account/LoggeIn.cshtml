@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "LoggeIn";
+}
+
+
+@if (Session["Id"] != null)
+{
+    <h2>LoggeIn</h2>
+    <h4>Hola @Session["User"].ToString()</h4>
+}
+else
+{
+    <h2>No estas loggeado!! Tenemos un intruso, repito:  tenemos un intruso</h2>
+    <p>Quien eres?</p>
+
+    <p> <h3>@ViewBag.Message</h3></p>
+}
+

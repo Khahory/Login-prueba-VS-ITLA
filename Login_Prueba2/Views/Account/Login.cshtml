@@ -1,0 +1,57 @@
+﻿@model Login_Prueba2.Models.AccountModel
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<!-- main -->
+<div class="agileits-main">
+    <div class="w3top-nav">
+        <div class="w3top-nav-left">
+            <h1><a href="index.html">Trendy</a></h1>
+        </div>
+        <div class="w3top-nav-right">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="header-main">
+        <h2>Login Now</h2>
+        <div class="header-bottom">
+            <div class="header-right w3agile">
+                <div class="header-left-bottom agileinfo">
+                    <form action="Verify" method="post">
+                        <div class="icon1">
+                            <input type="email" placeholder="Email@example.com" name="Name" required="" />
+                        </div>
+                        <div class="icon1">
+                            <input type="password" placeholder="Password" name="Password" required="" />
+                        </div>
+                        <div class="login-check">
+                            <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i> Keep me logged in</label>
+                        </div>
+                        <div class="bottom">
+                            <input type="submit" value="Log in" />
+                        </div>
+                        <p><a href="#">Forgot Password?</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- //main -->
+<!-- copyright -->
+<div class="copyright w3-agile">
+    <p>© 2018 Trendy Login Form . All rights reserved | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a></p>
+</div>
+<!-- //copyright --> 
